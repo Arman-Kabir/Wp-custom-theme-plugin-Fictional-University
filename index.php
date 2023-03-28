@@ -1,1 +1,1 @@
-this is our amazing customized theme
+this is our completely amazing customized theme
