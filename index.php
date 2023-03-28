@@ -1,17 +1,11 @@
 <?php
-$names = array('Brad', 'John', "Jane",'meow','Bark');
-
-$count = 0;
-while ($count < count($names)) {
-    echo " <li>Hi, my names is  $names[$count] </li> ";
-    $count++;
-}
+while (have_posts()) {
+    the_post(); ?>
+    <h2>
+       <a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a>
+    </h2>
+    <?php the_content();  ?>
+    <hr>
+<?php }
 
 ?>
-
-
-<!-- <p>My name si <?php echo $names[0] ?></p>
-<p>My name si <?php echo $names[1] ?></p>
-<p>My name si <?php echo $names[2] ?></p>
-<p>My name si <?php echo $names[3] ?></p> -->
-<!-- <p>My name si <?php echo $names[2] ?></p>  -->
