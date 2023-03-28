@@ -1,15 +1,17 @@
 <?php
-function greet($name, $color)
-{
-    echo " <p>Hi, my name is $name  and my fav color is $color  ";
-}
+$names = array('Brad', 'John', "Jane",'meow','Bark');
 
-greet('John', 'blue');
-greet('Jane', 'green');
+$count = 0;
+while ($count < count($names)) {
+    echo " <li>Hi, my names is  $names[$count] </li> ";
+    $count++;
+}
 
 ?>
 
 
-<h1><?php bloginfo('name'); ?>  </h1>
-
-<p><?php bloginfo('description');  ?>  </p>
+<!-- <p>My name si <?php echo $names[0] ?></p>
+<p>My name si <?php echo $names[1] ?></p>
+<p>My name si <?php echo $names[2] ?></p>
+<p>My name si <?php echo $names[3] ?></p> -->
+<!-- <p>My name si <?php echo $names[2] ?></p>  -->
